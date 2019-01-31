@@ -1,0 +1,7 @@
+CREATE EXTERNAL TABLE socialanalyticsblog2.tweet_entities (
+	tweetid BIGINT,
+	entity STRING,
+	type STRING,
+	score DOUBLE
+) ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
+LOCATION 's3://socialmediaanalyticsblogpost2-tweetsbucket-6buyg3iktoko/entities/';

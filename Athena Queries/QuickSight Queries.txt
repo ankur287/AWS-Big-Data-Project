@@ -1,0 +1,18 @@
+(SELECT t.id, t.text, t.timestamp_ms, s.sentiment, 'iPhone' AS item, place.bounding_box.coordinates[1][1][1] AS lon, place.bounding_box.coordinates[1][1][2] AS lat
+FROM socialanalyticsblog2.tweets AS t
+JOIN socialanalyticsblog2.tweet_sentiments AS s ON (s.tweetid = t.id)
+WHERE LOWER(t.text) LIKE '%iphone%')
+
+UNION
+
+(SELECT t.id, t.text, t.timestamp_ms, s.sentiment, 'oneplus' AS item, place.bounding_box.coordinates[1][1][1] AS lon, place.bounding_box.coordinates[1][1][2] AS lat
+FROM socialanalyticsblog2.tweets AS t
+JOIN socialanalyticsblog2.tweet_sentiments AS s ON (s.tweetid = t.id)
+WHERE LOWER(t.text) LIKE '%oneplus%')
+
+UNION
+
+(SELECT t.id, t.text, t.timestamp_ms, s.sentiment, 'Pixel' AS item, place.bounding_box.coordinates[1][1][1] AS lon, place.bounding_box.coordinates[1][1][2] AS lat
+FROM socialanalyticsblog2.tweets AS t
+JOIN socialanalyticsblog2.tweet_sentiments AS s ON (s.tweetid = t.id)
+WHERE LOWER(t.text) LIKE '%pixel3%' OR LOWER(t.text) LIKE '%pixel 3%')

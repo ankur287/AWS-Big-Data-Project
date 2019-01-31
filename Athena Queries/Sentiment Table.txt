@@ -1,0 +1,11 @@
+CREATE EXTERNAL TABLE socialanalyticsblog2.tweet_sentiments (
+	tweetid BIGINT,
+	text STRING,
+	originalText STRING,
+	sentiment STRING,
+	sentimentPosScore DOUBLE,
+	sentimentNegScore DOUBLE,
+	sentimentNeuScore DOUBLE,
+	sentimentMixedScore DOUBLE
+) ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
+LOCATION 's3://socialmediaanalyticsblogpost2-tweetsbucket-6buyg3iktoko/sentiment/
