@@ -12,3 +12,5 @@ Below is the snapshot of the entire processflow:
 And here is the sanpshot of what QuickSight dashboard looks like.
 
 ## Dashboard
+
+![Alt text](https://github.com/ankur287/AWS-Big-Data-Project/blob/master/Images/Dashboard.JPG?raw=true "Optional Title")
