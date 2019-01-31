@@ -6,3 +6,9 @@ I used AWS kinesis to stream twitter data in real time and stored it in AWS S3. 
 Below is the snapshot of the entire processflow:
 
 ## Process Flow
+
+![Alt text](https://github.com/ankur287/AWS-Big-Data-Project/blob/master/Images/Process%20flow.JPG?raw=true "Optional Title")
+
+And here is the sanpshot of what QuickSight dashboard looks like.
+
+## Dashboard
